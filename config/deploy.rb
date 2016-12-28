@@ -12,8 +12,6 @@ set :repo_url, "git@github.com:3014zhangshuo/rails101-4.git"
 set :deploy_to, "/home/apps/rails101-4"
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
-set :ssh_options, { :forward_agent => true }
-set :use_sudo, false
 
 # You can configure the Airbrussh format using :format_options.
 # These are the defaults.
