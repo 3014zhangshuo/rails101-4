@@ -3,7 +3,10 @@ lock "3.7.1"
 
 set :application, "rails101-4"
 set :repo_url, "git@github.com:3014zhangshuo/rails101-4.git"
-
+ssh_options[:forward_agent] = true
+default_run_options[:pty] = true
+set :scm, "git"
+set :user, "deployer"
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
